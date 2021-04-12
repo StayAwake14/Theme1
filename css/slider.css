@@ -1,0 +1,112 @@
+#slider {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:500px;
+    color:#4d4d4d;
+    overflow:hidden;
+}
+
+#quote-1
+{
+    position:relative;
+    z-index:100;
+    width:70%;
+}
+
+#quote-2
+{
+    position:relative;
+    display:none;
+    z-index:100;
+    width:70%;
+}
+
+.quote-author
+{
+    text-align:center;
+    margin-top:120px;
+    padding-top:10px;
+    font-size:22px;
+}
+
+.quote-text
+{
+    font-size:2vh;
+    width:70%;
+    margin: -75px auto 15px auto;
+}
+
+#slider-dots
+{
+    position:absolute;
+    margin-top:100px;
+}
+
+.dot-1
+{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:20px;
+    background-color:#4d4d4d;
+    margin:5px;
+}
+
+.dot-2
+{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:20px;
+    background-color:#4d4d4d;
+    margin:5px;
+}
+
+#arrow-slider-left:before
+{
+    position: relative;
+    content: '<';
+    width:50px;
+    height:50px;
+    font-weight:100;
+    margin-right: 25px;
+    font-size:45px;
+    z-index:1000;
+}
+
+#arrow-slider-right:after
+{
+    position: relative;
+    content: '>';
+    width:50px;
+    height:50px;
+    font-weight:100;
+    margin-left:25px;
+    font-size:45px;
+    z-index:1000;
+}
+
+#arrow-slider-left:hover
+{
+    cursor: pointer;
+}
+
+#arrow-slider-right
+{
+    cursor: pointer;
+}
+
+.quote-img
+{
+    position:absolute;
+    margin-top:-50px;
+    height:auto;
+    width:auto;
+}
+
+.slide-active
+{
+    background-color:black;
+}

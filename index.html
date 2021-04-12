@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/demo1.css" type="text/css">
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <title>Demo1</title>
+    <link rel="stylesheet" href="./fa/css/font-awesome.min.css">
+    <script>
+        var i = 2;
+
+        function changeQuoteR() {
+            $("#quote-2").removeClass("animated fadeInRight");
+            $("#quote-1").removeClass("animated fadeInRight");
+            if (i == 1) {
+                $("#quote-2").removeClass("animated fadeInLeft");
+                $("#quote-1").addClass("animated fadeInLeft");
+                $("#quote-1").css('display', 'block');
+                $("#quote-2").css('display', 'none');
+                $(".dot-1").addClass('slide-active');
+                $(".dot-2").removeClass('slide-active');
+                i++;
+            } else {
+                $("#quote-1").removeClass("animated fadeInLeft");
+                $("#quote-2").addClass("animated fadeInLeft");
+                $("#quote-1").css('display', 'none');
+                $("#quote-2").css('display', 'block');
+                $(".dot-1").removeClass('slide-active');
+                $(".dot-2").addClass('slide-active');
+                i--;
+            }
+        }
+
+        function changeQuoteL() {
+            $("#quote-2").removeClass("animated fadeInLeft");
+            $("#quote-1").removeClass("animated fadeInLeft");
+            if (i == 1) {
+                $("#quote-2").removeClass("animated fadeInRight");
+                $("#quote-1").addClass("animated fadeInRight");
+                $("#quote-1").css('display', 'block');
+                $("#quote-2").css('display', 'none');
+                $(".dot-1").addClass('slide-active');
+                $(".dot-2").removeClass('slide-active');
+                i++;
+            } else {
+                $("#quote-1").removeClass("animated fadeInRight");
+                $("#quote-2").addClass("animated fadeInRight");
+                $("#quote-1").css('display', 'none');
+                $("#quote-2").css('display', 'block');
+                $(".dot-1").removeClass('slide-active');
+                $(".dot-2").addClass('slide-active');
+                i--;
+            }
+        }
+
+        setInterval(changeQuoteR, 15000);
+    </script>
+</head>
+
+<body>
+    <section id="home" class="main-page">
+        <span class="icon">T</span>
+        <nav class="menu navbar-fluid text-center">
+            <a class="menu-button" id="homelink" href="#">Home Page</a>
+            <a class="menu-button" id="aboutlink" href="#">About Us</a>
+            <a class="menu-button" id="projectslink" href="#">Our Projects</a>
+            <a class="menu-button" id="testimonialslink" href="###">Testimonials</a>
+            <a class="menu-button" id="contactlink" href="###">Contact</a>
+           <!-- <a class="menu-button" id="demos" href="###">Demos</a> -->
+        </nav>
+
+        <div class="header">
+            <div class="header-text container-fluid text-center">
+                <h1 class="header-title">Themo, We Up For Profit</h1>
+                <p class="header-sub">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean congue convallis urna id congue. Nam sed sodales arcu. Morbi iaculis pulvinar libero eu rhoncus. Proin pharetra consectetur libero, sed auctor mi blandit nec. Duis luctus nunc et arcu hendrerit porta. Nulla non sem vel nulla venenatis interdum vitae ac arcu.
+                </p>
+                <a href="###" class="button-buy text-center">Buy Theme Now</a>
+            </div>
+        </div>
+        <div class="social">
+            <a href="http://instagram.com/" class="social-link"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a>
+            <a href="http://twitter.com/" class="social-link"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+            <a href="http://facebook.com/" class="social-link"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a>
+        </div>
+    </section>
+    <section id="about" class="about-page">
+        <div class="header text-center">
+            <div class="about-us container-fluid">
+                <h1 class="box-title">About Us</h1>
+                <hr class="line">
+                <p class="about-sub">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut. Pellentesque tempus elit ut leo gravida bibendum. Maecenas dictum tellus et eleifend tempor. Vestibulum vel fringilla nisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas a est a ante aliquam tempus quis ut arcu. Vivamus a enim ut ante lacinia accumsan.
+                </p>
+                <div class="row">
+                    <div class="grid-left col-sm-4">
+                        <span class="icon1"></span>
+                        <h3 class="icon-title">Design</h3>
+                        <hr class="icon-line">
+                        <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut.</p>
+                    </div>
+                    <div class="grid-center col-sm-4">
+                        <span class="icon2"></span>
+                        <h3 class="icon-title">Analysis</h3>
+                        <hr class="icon-line">
+                        <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut.</p>
+                    </div>
+                    <div class="grid-right col-sm-4">
+                        <span class="icon3"></span>
+                        <h3 class="icon-title">Finalization</h3>
+                        <hr class="icon-line">
+                        <p class="icon-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects-page">
+        <div class="header text-center">
+            <div class="projects container-fluid">
+                <h1 class="box-title">Our Projects</h1>
+                <hr class="projects-line">
+                <p class="projects-sub">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut.
+                </p>
+                <div class="row">
+                    <div class="col-6 col-sm-3 col-centered">
+                        <img src="./img/first.jpg" class="obrazek img-responsive" alt="first">
+                        <img src="./img/second.jpg" class="obrazek img-responsive" alt="second">
+                    </div>
+                    <div class="col-6 col-sm-3 col-centered">
+                        <img src="./img/third.jpg" class="obrazek img-responsive" alt="third">
+                        <img src="./img/fourth.jpg" class="obrazek img-responsive" alt="fourth">
+                    </div>
+                    <div class="col-6 col-sm-3 col-centered">
+                        <img src="./img/fifth.jpg" class="obrazek img-responsive" alt="fifth">
+                        <img src="./img/sixth.jpg" class="obrazek img-responsive" alt="sixth">
+                    </div>
+                    <div class="col-6 col-sm-3 col-centered">
+                        <img src="./img/seventh.jpg" class="obrazek img-responsive" alt="seventh">
+                        <img src="./img/eighth.jpg" class="obrazek img-responsive" alt="eighth">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials-page">
+        <div class="header text-center">
+            <div class="testimonials container-fluid">
+                <div class="first-half">
+                    <h1 class="box-title">Testimonials</h1>
+                    <hr class="testimonials-line">
+                    <div id="slider">
+                        <span id="arrow-slider-left" onclick="changeQuoteL();"></span>
+                        <img class="quote-img" src="./img/quote.png" />
+                        <div id="quote-1" class="animated fadeInLeft">
+                            <p class="quote-text">Don't cry because it's over, smile because it happened.</p>
+                            <p class="quote-author">Dr. Seuss</p>
+                        </div>
+                        <div id="quote-2" class="animated fadeInLeft">
+                            <p class="quote-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dolor elit, vehicula eget erat convallis, posuere iaculis leo. Nullam tempus tristique volutpat. Phasellus vitae ante nibh. Quisque dignissim felis ut euismod semper. Vestibulum vel elit sodales, efficitur tellus non, ultrices sapien. </p>
+                            <p class="quote-author">Dr. Seuss</p>
+                        </div>
+                        <span id="arrow-slider-right" onclick="changeQuoteR();"></span>
+                        <div id="slider-dots">
+                            <span class="dot-1 slide-active"></span>
+                            <span class="dot-2 "></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-half">
+                    <div class="grid-logo row">
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-1.png" class="testimonial-logo img-responsive" alt="logo-1">
+                        </div>
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-2.png" class="testimonial-logo img-responsive" alt="logo-2">
+                        </div>
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-3.png" class="testimonial-logo img-responsive" alt="logo-3">
+                        </div>
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-4.png" class="testimonial-logo img-responsive" alt="logo-4">
+                        </div>
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-5.png" class="testimonial-logo img-responsive" alt="logo-5">
+                        </div>
+                        <div class="grid col-6 col-sm-4 col-centered">
+                            <img src="./img/testimonials-6.png" class="testimonial-logo img-responsive" alt="logo-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-page">
+        <div class="header text-center">
+            <div class="contact container-fluid text-center">
+                <div class="first-half-small">
+                    <h1 class="box-title">Contact</h1>
+                    <hr class="testimonials-line">
+                    <p class="projects-sub">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis imperdiet risus, sed auctor dolor sollicitudin eu. Fusce feugiat auctor ligula, vitae euismod ligula ornare ut.
+                    </p>
+                </div>
+                <div class="second-half">
+                    <form class="contact-form container form-horizontal" role="form" action="mailto:dernierexlol@gmail.com" method='POST'>
+                        <div class='form-group row'>
+                            <div class="col-md-12">
+                                <div class='form-group row'>
+                                    <div class="col-md-12">
+                                        <textarea class='message col-md-5' name='message' placeholder='Treść wiadomości...'></textarea>
+                                    </div>
+                                </div>
+                                <input class='inputs col-6' type='text' placeholder='Imię' name='name'>
+                                <input class='inputs col-6' type='text' placeholder='Nazwisko' name='surname'>
+                                <input class='inputs col-6' type='email' placeholder='E-mail' name='email'>
+                                <input class='button' type="submit" name="send" value="Buy themo now">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    function goToSection(id) {
+        // Reove "link" from the ID
+        id = id.replace("link", "");
+        // Scroll
+        $('html,body, section').animate({
+                scrollTop: $("#" + id).offset().top
+            },
+            'slow');
+    }
+
+    $("a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToSection($(this).attr("id"));
+    });
+</script>
